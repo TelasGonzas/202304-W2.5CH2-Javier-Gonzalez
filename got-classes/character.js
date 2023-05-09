@@ -1,9 +1,13 @@
 export class Character {
-  constructor(name, family, age, alive = true) {
+  constructor(name, family, age) {
     this.tvShow = "GOT";
     this.name = name;
     this.family = family;
     this.age = age;
-    this.alive = alive;
+    this.alive = "alive";
+  }
+  isDead() {
+    this.alive = "Dead";
+    return this.alive;
   }
 }

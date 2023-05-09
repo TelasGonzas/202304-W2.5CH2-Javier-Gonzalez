@@ -1,4 +1,5 @@
-clases GOT
+# clases GOT
+
 Tendrás que crear en JS una estructura de clases que refleje el siguiente modelo de datos:
 
 En Juego de Tronos existen personajes. Todos esos personajes tienen la siguiente información: · Nombre · Familia a la que pertenece · Edad · Estado (vivo o muerto, aunque inicialmente todos están vivos)

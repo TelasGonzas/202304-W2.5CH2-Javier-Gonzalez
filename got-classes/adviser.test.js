@@ -7,15 +7,19 @@ describe("Given Adviser class", () => {
         "name",
         "family",
         "age",
-        true,
+        "alive",
         "characterToAdvise"
       );
       expect(adviser).toHaveProperty("tvShow", "GOT");
       expect(adviser).toHaveProperty("name", "name");
       expect(adviser).toHaveProperty("family", "family");
       expect(adviser).toHaveProperty("age", "age");
-      expect(adviser).toHaveProperty("alive", true);
+      expect(adviser).toHaveProperty("alive", "alive");
       expect(adviser).toHaveProperty("characterToAdvise", "characterToAdvise");
+      expect(adviser).toHaveProperty(
+        "sentence",
+        "No sé por qué, pero creo que voy a morir pronto"
+      );
     });
   });
 });

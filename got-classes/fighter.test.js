@@ -7,7 +7,7 @@ describe("Given Fighter class", () => {
         "name",
         "family",
         "age",
-        true,
+        "alive",
         "weapon",
         "skill"
       );
@@ -15,9 +15,13 @@ describe("Given Fighter class", () => {
       expect(fighter).toHaveProperty("name", "name");
       expect(fighter).toHaveProperty("family", "family");
       expect(fighter).toHaveProperty("age", "age");
-      expect(fighter).toHaveProperty("alive", true);
+      expect(fighter).toHaveProperty("alive", "alive");
       expect(fighter).toHaveProperty("weapon", "weapon");
       expect(fighter).toHaveProperty("skill", "skill");
+      expect(fighter).toHaveProperty(
+        "sentence",
+        "Primero pego y luego pregunto"
+      );
     });
   });
 });

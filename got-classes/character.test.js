@@ -4,6 +4,7 @@ describe("Given Character class", () => {
   describe("When we instantiate it", () => {
     test("Then should have an object with the properties of the class", () => {
       const character = new Character("name", "family", "age", true);
+      expect(character).toHaveProperty("tvShow", "GOT");
       expect(character).toHaveProperty("name", "name");
       expect(character).toHaveProperty("family", "family");
       expect(character).toHaveProperty("age", "age");
